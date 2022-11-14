@@ -1,70 +1,88 @@
 <!doctype html>
-<html class="no-js" lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>.:patito.club</title>
-        <meta name="description" content="Just another corner in the Net">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header>
-          <h1>patito.club</h1>
-          <img src="patitoninja.svg" width="150" alt="patito"/>
-          <p><em>Use the source, Luke</em></p>
-        </header>
-        <section id="main">
-        <script>
-          const scene = new THREE.Scene();
-          const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-          const renderer = new THREE.WebGLRenderer();
-          renderer.setSize(window.innerWidth, window.innerHeight);
-          document.body.appendChild(renderer.domElement);
+<html class="no-js" lang="en">
 
-          const geometry = new THREE.BoxGeometry(700, 700, 700, 10, 10, 10);
-          const material = new THREE.MeshBasicMaterial({color:0x00ff00, wireframe: true});
-          const cube = new THREE.Mesh(geometry, material);
-          scene.add(cube);
-          camera.position.z = 5;
+<head>
+  <meta charset="utf-8">
+  <title>Apps Patito Club</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-          function animate() {
-            requestAnimationFrame(animate);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-            renderer.render(scene, camera);
-          }
-          animate();
-        </script>
-        </section>
-        <section id="news">
-          <ul>
-            <li class="crossed">
-              <div class="date">10/04/2018</div>
-              <div class="entry">IPFS enabled in
-                <!--a href="www.patito.club">www.patito.club</a--></div>
-            </li>
-            <li class="crossed">
-              <div class="date">12/27/2018</div>
-              <div class="entry">Icecast2 on<br />
-              <!-- audio controls src="http://radio.patito.club:8000/stream"></audio--><br />
-              <a href="http://radio.patito.club:8000/stream">radio.patito.club:8000/stream</a></div>
-            </li>
-            <li class="crossed">
-            <div class="date">03/21/2019</div>
-              <div class="entry">Jenkins on <a href="https://ci.patito.club">ci.patito.club</a></div></li>
-            <li class="crossed">
-            <div class="date">04/08/2019</div>
-              <div class="entry">OpenFaaS on <a href="https://faas.patito.club">faas.patito.club</a></div></li>
-            <li class="crossed">
-            <div class="date">07/11/2019</div>
-              <div class="entry">Hastebin <a href="https://paste.patito.club">paste.patito.club</a></div>
-            </li>
-          </ul>
-        </section>
-    </body>
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div id="grid">
+    <div id="site-info">
+      <img width="50px" height="50px" src="img/pitr-Ducky-icon.svg" />
+      <h1>Apps Patito Club</h1>
+      <h2>Some web applications I made,<br />either for learning or just fun!</h2>
+      <div id="updates">
+        <h3>Recently updated</h3>
+        <div class="update-entry">healtcoach · 3 hours ago</div>
+        <div class="update-entry">victracer · 1 hour ago</div>
+        <div class="update-entry">ianseo-docker · 12 hours ago</div>
+      </div>
+      <div id="copy">
+        Copyright © 2020-2022 by
+        <a href="https://celisdelafuente.net"> E. Celis</a>
+      </div>
+    </div>
+    <div class="app-card">
+      <h2>Health Coach</h2>
+      <h4>JavaScript (Express) • MongoDB</h4>
+      <p>Meals planner, add recipes and generate daily menu</p>
+    </div>
+    <div class="app-card">
+      <h2>Victracer</h2>
+      <h4>JavaScript • MongoDB</h4>
+      <p>Meals planner, add recipes and generate daily menu</p>
+    </div>
+    <div class="app-card">
+      <h2>Archery Roster</h2>
+      <h4>JavaScript (Next.JS / MaterialUI) • MongoDB</h4>
+      <p>Enroll athletes to archery tournaments (It works for I@anseo!)</p>
+    </div>
+    <div class="app-card">
+      <h2>I@nseo on Docker</h2>
+      <h4>Docker</h4>
+      <p>Run i@nseo software for managing archery tournaments results in docker</p>
+    </div>
+    <div class="app-card">
+      <h2>Mallard</h2>
+      <h4>Python • JavaScript (Next.JS / MaterialUI) • OpenCV • Solr</h4>
+      <p>Meals planner, add recipes and generate daily menu</p>
+    </div>
+    <div class="app-card">
+      <h2>e-react-ui</h2>
+      <h4>JavaScript (styled-components)</h4>
+      <p>Meals planner, add recipes and generate daily menu</p>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>
