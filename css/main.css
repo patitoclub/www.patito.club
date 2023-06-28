@@ -19,13 +19,18 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html, body {
-    color: var(--main-color);
-    background-color: var(--bg-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    /* line-height: 1.4; */
-  }
+html, body {
+  color: var(--main-color);
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* line-height: 1.4; */
+}
+
+a, a:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}
   
 /*
  * Remove text-shadow in selection highlight:
@@ -136,6 +141,11 @@ textarea {
   margin-top: 65px;
 }
 
+.updated_repos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 #copy, #copy a {
   position: relative;
   bottom: 0px;

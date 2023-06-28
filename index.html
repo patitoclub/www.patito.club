@@ -1,30 +1,23 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Apps Patito Club</title>
-  <meta name="description" content="">
+  <meta name="description" content="Web applications portfolio by Ernesto Celis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
+  <meta property="og:title" content="Apps Patito Club">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
-
   <div id="grid">
     <div id="site-info">
       <img width="50px" height="50px" src="img/pitr-Ducky-icon.svg" />
@@ -32,57 +25,17 @@
       <h2>Some web applications I made,<br />either for learning or just fun!</h2>
       <div id="updates">
         <h3>Recently updated</h3>
-        <div class="update-entry">healtcoach · 3 hours ago</div>
-        <div class="update-entry">victracer · 1 hour ago</div>
-        <div class="update-entry">ianseo-docker · 12 hours ago</div>
+        <ul id="updated_repos" class="updated_repos"></ul>
       </div>
       <div id="copy">
-        Copyright © 2020-2022 by
-        <a href="https://celisdelafuente.net"> E. Celis</a>
+        Copyright © 2020-2023 by
+        <a href="https://celisdelafuente.net"> Ernesto Celis</a>
       </div>
-    </div>
-    <div class="app-card">
-      <h2>Health Coach</h2>
-      <h4>JavaScript (Express) • MongoDB</h4>
-      <p>Meals planner, add recipes and generate daily menu</p>
-    </div>
-    <div class="app-card">
-      <h2>Victracer</h2>
-      <h4>JavaScript • MongoDB</h4>
-      <p>Meals planner, add recipes and generate daily menu</p>
-    </div>
-    <div class="app-card">
-      <h2>Archery Roster</h2>
-      <h4>JavaScript (Next.JS / MaterialUI) • MongoDB</h4>
-      <p>Enroll athletes to archery tournaments (It works for I@anseo!)</p>
-    </div>
-    <div class="app-card">
-      <h2>I@nseo on Docker</h2>
-      <h4>Docker</h4>
-      <p>Run i@nseo software for managing archery tournaments results in docker</p>
-    </div>
-    <div class="app-card">
-      <h2>Mallard</h2>
-      <h4>Python • JavaScript (Next.JS / MaterialUI) • OpenCV • Solr</h4>
-      <p>Meals planner, add recipes and generate daily menu</p>
-    </div>
-    <div class="app-card">
-      <h2>e-react-ui</h2>
-      <h4>JavaScript (styled-components)</h4>
-      <p>Meals planner, add recipes and generate daily menu</p>
     </div>
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+  </body>
 </html>
