@@ -1,4 +1,5 @@
 "use strict";
+require('@babel/polyfill/noConflict');
 
 (async function () {
   const githubApi = 'https://api.github.com';
